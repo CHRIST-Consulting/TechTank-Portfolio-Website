@@ -8,7 +8,6 @@ export default function AboutUs() {
 
   return (
     <div className="w-full bg-white">
-      {/* Main Heading */}
       <motion.div 
         className="w-full flex items-center justify-center py-16 md:py-24"
         initial="hidden"
@@ -22,7 +21,6 @@ export default function AboutUs() {
         </h1>
       </motion.div>
 
-      {/* Mission Section */}
       <div className="w-full flex justify-center px-4 sm:px-6 md:px-8 lg:px-16 py-12 md:py-20">
         <div className="w-full max-w-md sm:max-w-lg md:max-w-5xl 2xl:max-w-7xl grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
           <motion.div 
@@ -57,7 +55,6 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* Story Section */}
       <div className="w-full flex justify-center px-4 sm:px-6 md:px-8 lg:px-16 py-12 md:py-20 bg-gray-50">
         <div className="w-full max-w-md sm:max-w-lg md:max-w-5xl 2xl:max-w-7xl grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
           <motion.div 

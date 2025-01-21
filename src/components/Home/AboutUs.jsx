@@ -69,7 +69,7 @@ export default function AboutUs() {
               Our Story
             </h2>
             <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed">
-              Christ Consulting was born from a vision to redefine the role of technology in business growth. Our journey began with a small team of passionate individuals dedicated to making an impact. Over time, we've grown into a trusted partner for organizations across industries, delivering customized solutions powered by the latest technological advancements.
+              CHRIST Consulting was born from a vision to redefine the role of technology in business growth. Our journey began with a small team of passionate individuals dedicated to making an impact. Over time, we've grown into a trusted partner for organizations across industries, delivering customized solutions powered by the latest technological advancements.
             </p>
           </motion.div>
           <motion.div 

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export function Hero() {
   return (
-    <div className="min-h-screen w-full relative flex flex-col items-center justify-center overflow-hidden pt-24 sm:pt-28 lg:pt-20 pb-32 px-4 sm:px-6 lg:px-8">
+    <div className="w-full h-fit 2xl:min-h-screen relative flex flex-col items-center justify-center overflow-hidden pt-32 sm:pt-28 lg:pt-20 pb-32 px-4 sm:px-6 lg:px-8">
       <div className="absolute inset-0 z-0">
         <div className="absolute w-[300px] h-[300px] bg-blue-400/10 rounded-full blur-3xl -top-20 -left-20"></div>
         <div className="absolute w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-3xl bottom-0 right-0"></div>
@@ -54,19 +54,6 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="relative w-full h-full">
-              <div className="absolute inset-0">
-                <div className="grid grid-cols-4 h-full">
-                  {[...Array(5)].map((_, i) => (
-                    <div key={i} className="border-l border-blue-300/10 h-full" />
-                  ))}
-                </div>
-                <div className="grid grid-rows-4 w-full">
-                  {[...Array(5)].map((_, i) => (
-                    <div key={i} className="border-t border-blue-300/10 w-full" />
-                  ))}
-                </div>
-              </div>
-
               <motion.div 
                 className="absolute inset-0 flex items-center justify-center"
                 animate={{ scale: [1, 1.05, 1] }}

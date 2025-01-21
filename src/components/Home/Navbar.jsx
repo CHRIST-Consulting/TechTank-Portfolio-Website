@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { TbLayoutSidebarLeftCollapseFilled, TbLayoutSidebarLeftExpandFilled } from "react-icons/tb";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoMdClose } from "react-icons/io";
 import { motion, AnimatePresence } from 'framer-motion';
 
 export function Navbar({ activeTab, setActiveTab }) {
@@ -77,7 +78,7 @@ export function Navbar({ activeTab, setActiveTab }) {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <a href={tab.href} className="text-sm lg:text-2xl">{tab.label}</a>
+                    <a href={tab.href} className="text-sm lg:text-lg">{tab.label}</a>
                   </motion.li>
                 ))}
               </ul>
@@ -93,9 +94,9 @@ export function Navbar({ activeTab, setActiveTab }) {
               whileTap={{ scale: 0.95 }}
             >
               {isSidebarOpen ? (
-                <TbLayoutSidebarLeftCollapseFilled size={24} />
+                <IoMdClose size={24} />
               ) : (
-                <TbLayoutSidebarLeftExpandFilled size={24} />
+                <RxHamburgerMenu size={24} />
               )}
             </motion.button>
 
@@ -117,7 +118,7 @@ export function Navbar({ activeTab, setActiveTab }) {
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <TbLayoutSidebarLeftCollapseFilled size={24} />
+                      <IoMdClose size={24} />
                     </motion.button>
                   </div>
                   <nav className="mt-4">

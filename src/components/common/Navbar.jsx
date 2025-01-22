@@ -3,12 +3,14 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import { motion, AnimatePresence } from 'framer-motion';
 
-export function Navbar({ activeTab, setActiveTab }) {
+export function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  const activeTab = window.location.pathname.replace("/", "");
+
   const tabs = [
-    { id: 'home', label: 'Home', href: '/home' },
+    { id: '', label: 'Home', href: '/' },
     { id: 'about', label: 'About', href: '/about' },
     { id: 'services', label: 'Services', href: '/services' },
     { id: 'contact', label: 'Contact', href: '/contact' },
@@ -73,7 +75,6 @@ export function Navbar({ activeTab, setActiveTab }) {
                     key={tab.id}
                     className={`mx-2 px-4 lg:mx-2 lg:px-5 py-2 rounded-full cursor-pointer transition-colors ${activeTab === tab.id ? 'bg-[#051650] text-white' : 'bg-transparent text-black'
                       }`}
-                    onClick={() => setActiveTab(tab.id)}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -124,9 +125,9 @@ export function Navbar({ activeTab, setActiveTab }) {
                     <ul className="space-y-2">
                       {tabs.map((tab) => (
                         <motion.li
-                          key={tab.id}
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
+                          key={tab.id}
                         >
                           <a
                             href={tab.href}
@@ -135,7 +136,6 @@ export function Navbar({ activeTab, setActiveTab }) {
                               : 'text-gray-600 hover:bg-gray-100'
                               }`}
                             onClick={() => {
-                              setActiveTab(tab.id);
                               toggleSidebar();
                             }}
                           >

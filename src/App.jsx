@@ -21,10 +21,12 @@ function App() {
             />
 
           </Route>
+
           <Route
             path="/about"
             element={<NotFound />}
           />
+
           <Route
             path="/services"
             element={<Layout />}
@@ -34,10 +36,12 @@ function App() {
               element={<Services />}
             />
           </Route>
+
           <Route
             path="/contact"
             element={<NotFound />}
           />
+
           <Route
             path="*"
             element={<NotFound />}

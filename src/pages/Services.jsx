@@ -24,15 +24,15 @@ const services = [
     }
 ]
 
-export default function Services() {
-    const backgroundColors = [{
-        bgColor: "bg-[#D9D9D9]",
-        textColor: "text-[#051650]"
-    }, {
-        bgColor: "bg-[#051650]",
-        textColor: "text-white"
-    }]
+const backgroundColors = [{
+    bgColor: "bg-[#D9D9D9]",
+    textColor: "text-[#051650]"
+}, {
+    bgColor: "bg-[#051650]",
+    textColor: "text-white"
+}]
 
+export default function Services() {
     let count = 0
 
     return (

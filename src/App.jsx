@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Home from './pages/Home';
 import NotFound from './components/not-found';
 import Services from './pages/Services';
-import Layout from './layout';
+import Layout from './Layout';
 function App() {
   const [activeTab, setActiveTab] = useState('home');
 

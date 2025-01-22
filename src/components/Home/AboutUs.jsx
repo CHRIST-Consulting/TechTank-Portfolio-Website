@@ -8,7 +8,7 @@ export default function AboutUs() {
 
   return (
     <div className="w-full bg-white">
-      <motion.div 
+      <motion.div
         className="w-full flex items-center justify-center py-16 md:py-24"
         initial="hidden"
         whileInView="visible"
@@ -23,7 +23,7 @@ export default function AboutUs() {
 
       <div className="w-full flex justify-center px-4 sm:px-6 md:px-8 lg:px-16 py-12 md:py-20">
         <div className="w-full max-w-md sm:max-w-lg md:max-w-5xl 2xl:max-w-7xl grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
-          <motion.div 
+          <motion.div
             className="w-full h-[300px] md:h-[270px] lg:h-[300px] xl:h-[350px] 2xl:h-[400px] overflow-hidden rounded-lg shadow-xl"
             initial="hidden"
             whileInView="visible"
@@ -32,12 +32,12 @@ export default function AboutUs() {
             variants={fadeInUp}
           >
             <img
-              src="/about 1.png"
+              src="/images/home/about 1.png"
               alt="Team members in discussion"
               className="w-full h-full object-cover"
             />
           </motion.div>
-          <motion.div 
+          <motion.div
             className="flex flex-col justify-center space-y-6"
             initial="hidden"
             whileInView="visible"
@@ -57,7 +57,7 @@ export default function AboutUs() {
 
       <div className="w-full flex justify-center px-4 sm:px-6 md:px-8 lg:px-16 py-12 md:py-20 bg-gray-50">
         <div className="w-full max-w-md sm:max-w-lg md:max-w-5xl 2xl:max-w-7xl grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
-          <motion.div 
+          <motion.div
             className="flex flex-col justify-center space-y-6 order-2 md:order-1"
             initial="hidden"
             whileInView="visible"
@@ -72,7 +72,7 @@ export default function AboutUs() {
               CHRIST Consulting was born from a vision to redefine the role of technology in business growth. Our journey began with a small team of passionate individuals dedicated to making an impact. Over time, we've grown into a trusted partner for organizations across industries, delivering customized solutions powered by the latest technological advancements.
             </p>
           </motion.div>
-          <motion.div 
+          <motion.div
             className="w-full h-[300px] md:h-[270px] lg:h-[300px] xl:h-[350px] 2xl:h-[400px] overflow-hidden rounded-lg shadow-xl order-1 md:order-2"
             initial="hidden"
             whileInView="visible"
@@ -81,7 +81,7 @@ export default function AboutUs() {
             variants={fadeInUp}
           >
             <img
-              src="/about 2.png"
+              src="/images/home/about 2.png"
               alt="Team members collaborating"
               className="w-full h-full object-cover"
             />

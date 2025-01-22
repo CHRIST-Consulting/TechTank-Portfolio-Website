@@ -12,13 +12,13 @@ export function Hero() {
 
       <div className="w-full max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-          <motion.div 
+          <motion.div
             className="space-y-8 text-center lg:text-left"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="space-y-4"> 
+            <div className="space-y-4">
               <h2 className="text-2xl sm:text-3xl font-medium text-white/90 tracking-wide">
                 Your Trusted Partner In
               </h2>
@@ -38,7 +38,7 @@ export function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button 
+              <Button
                 className="group bg-white hover:bg-white/90 text-blue-900 rounded-full px-6 py-3 h-auto text-lg transition-all duration-300"
               >
                 Get Started
@@ -47,20 +47,20 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="relative w-full h-[400px] lg:h-[600px] flex items-center justify-center lg:justify-end"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="relative w-full h-full">
-              <motion.div 
+              <motion.div
                 className="absolute inset-0 flex items-center justify-center"
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
               >
                 <img
-                  src="/hero.png"
+                  src="/images/home/hero.png"
                   alt="Technology Infrastructure"
                   className="w-full h-full object-contain"
                 />

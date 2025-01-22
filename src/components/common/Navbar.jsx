@@ -35,45 +35,44 @@ export function Navbar({ activeTab, setActiveTab }) {
 
   return (
     <>
-      <motion.div 
+      <motion.div
         className={`w-screen h-fit fixed top-0 z-50 transition-colors duration-300 bg-transparent`}
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className="flex flex-row w-screen">
-        <AnimatePresence>
-          {!scrolled && (
-            <motion.div 
-              className="flex justify-start items-center mx-10 w-32 h-16 sm:w-40 sm:h-24 lg:w-48 bg-transparent ml-2"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ 
-                type: "spring", 
-                stiffness: 300, 
-                damping: 30,
-                opacity: { duration: 0.2 }
-              }}
-              whileHover={{ scale: 1.05 }}
-            >
-              <img 
-                src="/logo.png"
-                alt="logo"
-                className="w-full h-full object-contain"
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
+          <AnimatePresence>
+            {!scrolled && (
+              <motion.div
+                className="flex justify-start items-center mx-10 w-32 h-16 sm:w-40 sm:h-24 lg:w-48 bg-transparent ml-2"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 30,
+                  opacity: { duration: 0.2 }
+                }}
+                whileHover={{ scale: 1.05 }}
+              >
+                <img
+                  src="/images/logo.png"
+                  alt="logo"
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
+            )}
+          </AnimatePresence>
           <div className="hidden sm:flex justify-center lg:justify-center items-center w-full h-24 bg-transparent absolute top-0 left-0 z-10">
             <nav className="flex w-fit h-fit justify-center items-center">
               <ul className="flex flex-row justify-center items-center w-fit h-fit py-2 rounded-full bg-white shadow-lg">
                 {tabs.map((tab) => (
                   <motion.li
                     key={tab.id}
-                    className={`mx-2 px-4 lg:mx-2 lg:px-5 py-2 rounded-full cursor-pointer transition-colors ${
-                      activeTab === tab.id ? 'bg-[#051650] text-white' : 'bg-transparent text-black'
-                    }`}
+                    className={`mx-2 px-4 lg:mx-2 lg:px-5 py-2 rounded-full cursor-pointer transition-colors ${activeTab === tab.id ? 'bg-[#051650] text-white' : 'bg-transparent text-black'
+                      }`}
                     onClick={() => setActiveTab(tab.id)}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
@@ -124,18 +123,17 @@ export function Navbar({ activeTab, setActiveTab }) {
                   <nav className="mt-4">
                     <ul className="space-y-2">
                       {tabs.map((tab) => (
-                        <motion.li 
+                        <motion.li
                           key={tab.id}
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
                           <a
                             href={tab.href}
-                            className={`block px-4 py-2 text-lg ${
-                              activeTab === tab.id
-                                ? 'bg-[#051650] text-white'
-                                : 'text-gray-600 hover:bg-gray-100'
-                            }`}
+                            className={`block px-4 py-2 text-lg ${activeTab === tab.id
+                              ? 'bg-[#051650] text-white'
+                              : 'text-gray-600 hover:bg-gray-100'
+                              }`}
                             onClick={() => {
                               setActiveTab(tab.id);
                               toggleSidebar();

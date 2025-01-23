@@ -49,7 +49,7 @@ export default function Services() {
                 </div>
             </div>
 
-            <div class="mx-auto my-8 flex flex-col gap-6">
+            <div className="mx-auto my-8 flex flex-col gap-6">
                 {
                     services.map((service) => {
                         count++

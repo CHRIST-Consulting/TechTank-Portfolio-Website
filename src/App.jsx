@@ -20,19 +20,28 @@ function App() {
               element={<Home />}
             />
 
+          </Route>
+
+          <Route
+            path="/about"
+            element={<NotFound />}
+          />
+
+          <Route
+            path="/services"
+            element={<Layout />}
+          >
             <Route
-              path="/about"
-              element={<NotFound />}
-            />
-            <Route
-              path="/services"
-              element={<Services activeTab={activeTab} setActiveTab={setActiveTab} />}
-            />
-            <Route
-              path="/contact"
-              element={<NotFound />}
+              index
+              element={<Services />}
             />
           </Route>
+
+          <Route
+            path="/contact"
+            element={<NotFound />}
+          />
+
           <Route
             path="*"
             element={<NotFound />}

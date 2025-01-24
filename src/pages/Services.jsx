@@ -4,7 +4,16 @@ import React from 'react'
 const services = [
     {
         title: "Front End Development",
-        description: "Our mission is to bridge the gap between technology and business success. We believe in creating value by providing transformative solutions that enhance efficiency, scalability, and innovation."
+        description: "Our mission is to bridge the gap between technology and business success. We believe in creating value by providing transformative solutions that enhance efficiency, scalability, and innovation.",
+        imageUrls: {
+            baseUrl: "/images/services/frontend/",
+            images: [
+                "1.png",
+                "3.png",
+                "2.png",
+                "4.jpg",
+            ]
+        }
     },
     {
         title: "Back End Development",
@@ -53,7 +62,14 @@ export default function Services() {
                 {
                     services.map((service) => {
                         count++
-                        return <Service key={service.title} bgColor={backgroundColors[count % 2].bgColor} textColor={backgroundColors[count % 2].textColor} title={service.title} description={service.description} />
+                        return <Service
+                            key={service.title}
+                            bgColor={backgroundColors[count % 2].bgColor}
+                            textColor={backgroundColors[count % 2].textColor}
+                            title={service.title}
+                            description={service.description}
+                            imageUrls={service.imageUrls}
+                        />
                     })
                 }
             </div>

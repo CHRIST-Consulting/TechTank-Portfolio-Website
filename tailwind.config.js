@@ -61,7 +61,7 @@ export default {
         },
       },
       animation: {
-        scroll: "scroll 40s linear infinite",
+        scroll: "scroll 15s linear infinite",
       },
     },
   },

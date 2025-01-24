@@ -16,7 +16,7 @@ export default function Service({ bgColor, textColor, title, description, imageU
                         <div key={index} className="bg-white/10 p-2 mx-2 rounded-lg shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
                             <img src={imageUrls.baseUrl + image} alt="Frontend Service" className="rounded-lg object-cover shadow-md min-w-[240px] min-h-[200px]" />
                         </div>
-                    )) : Array(25).fill().map((_, i) => (
+                    )) : Array(16).fill().map((_, i) => (
                         <div key={i} className="bg-white/10 p-2 mx-2 rounded-lg shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
                             <img src="/images/services/placeholder.png" alt="Backend Service" className="w-full rounded-lg shadow-md min-w-[240px] min-h-[120px]" />
                         </div>

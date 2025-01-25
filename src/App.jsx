@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Layout />}
+            element={<Layout activeTab={activeTab} setActiveTab={setActiveTab} />}
           >
             <Route
               index
@@ -29,7 +29,7 @@ function App() {
 
           <Route
             path="/services"
-            element={<Layout />}
+            element={<Layout activeTab={activeTab} setActiveTab={setActiveTab} />}
           >
             <Route
               index

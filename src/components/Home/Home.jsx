@@ -2,6 +2,9 @@ import { Navbar } from "@/components/Home/Navbar";
 import { Hero } from "@/components/Home/Hero";
 import BelowHero from "@/components/Home/BelowHero";
 import AboutUs from "@/components/Home/AboutUs";
+import OurClient from "@/components/Home/OurClient";
+import Testimonials from "@/components/Home/Testimonials";
+import Footer from "@/components/Home/Footer";
 
 export default function Home({
   activeTab,
@@ -17,6 +20,9 @@ export default function Home({
       </div>
       <BelowHero />
       <AboutUs />
+      <OurClient />
+      <Testimonials />
+      <Footer />
     </main>
   );
 }

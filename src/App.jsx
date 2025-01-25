@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import Home from './components/Home/Home';
+import Home from './pages/Home';
 import NotFound from './components/not-found';
 function App() {
   const [activeTab, setActiveTab] = useState('home');

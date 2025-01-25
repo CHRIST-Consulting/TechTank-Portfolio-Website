@@ -6,10 +6,7 @@ import OurClient from "@/components/Home/OurClient";
 import Testimonials from "@/components/Home/Testimonials";
 import Footer from "@/components/Home/Footer";
 
-export default function Home({
-  activeTab,
-  setActiveTab,
-}) {
+export default function Home({ activeTab, setActiveTab }) {
   return (
     <main className="min-h-screen w-full overflow-x-hidden bg-[#051650]">
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#678FFF] via-45% via-[#003AFF] via-[59.22%] to-[#051650] to-[78.1%] relative">

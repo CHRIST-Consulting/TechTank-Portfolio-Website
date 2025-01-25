@@ -34,15 +34,15 @@ const BelowHero = () => {
             "With",
             "CHRIST Consulting"
           ].map((text, index) => (
-          <motion.div
-            key={index}
-            className="overflow-hidden w-full"
-            style={getTextAnimation(index)}
-            transition={{
-              type: "spring",
-              stiffness: 50,
-              damping: 20,
-            }}
+            <motion.div
+              key={index}
+              className="overflow-hidden w-full"
+              style={getTextAnimation(index)}
+              transition={{
+                type: "spring",
+                stiffness: 50,
+                damping: 20,
+              }}
             >
               <h1 className='text-white text-[9.5502645503vw] font-bold tracking-wide leading-none whitespace-nowrap'>
                 {text}
@@ -53,9 +53,9 @@ const BelowHero = () => {
       </motion.div>
 
       <motion.div className="w-full mt-auto">
-        <img 
-          src="/hero-bottom.png" 
-          alt="Hero Background" 
+        <img
+          src="/images/home/hero-bottom.png"
+          alt="Hero Background"
           className="w-full h-auto object-cover"
         />
       </motion.div>

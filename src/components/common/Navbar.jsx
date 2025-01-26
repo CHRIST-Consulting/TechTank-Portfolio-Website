@@ -11,7 +11,7 @@ export function Navbar() {
 
   const tabs = [
     { id: '', label: 'Home', href: '/' },
-    { id: 'team', label: 'Team', href: '/team' },
+    { id: 'about', label: 'About', href: '/about' },
     { id: 'services', label: 'Services', href: '/services' },
     { id: 'contact', label: 'Contact', href: '/contact' },
   ];

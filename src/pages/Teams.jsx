@@ -21,7 +21,7 @@ export default function Teams() {
                 </div>
             </section>
 
-            <section className="py-16 container mx-auto px-6">
+            <section className="py-16 container mx-auto px-6 flex flex-col items-center justify-center">
                 <div className="w-full mb-8">
                     <div className="flex gap-2 lg:text-[70px] text-[40px] font-bold justify-center">
                         <h1 className="text-white">Our</h1>
@@ -30,7 +30,7 @@ export default function Teams() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <MemberCard />
                     <MemberCard />
                     <MemberCard />

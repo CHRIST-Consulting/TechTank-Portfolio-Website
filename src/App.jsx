@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import NotFound from './components/not-found';
 import Services from './pages/Services';
 import Layout from './Layout';
+import Teams from './pages/Teams';
 function App() {
   const [activeTab, setActiveTab] = useState('home');
 
@@ -23,9 +24,14 @@ function App() {
           </Route>
 
           <Route
-            path="/about"
-            element={<NotFound />}
-          />
+            path="/team"
+            element={<Layout />}
+          >
+            <Route
+              index
+              element={<Teams />}
+            />
+          </Route>
 
           <Route
             path="/services"

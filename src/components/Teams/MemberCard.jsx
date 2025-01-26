@@ -3,7 +3,7 @@ import { Card } from '../ui/card'
 
 function MemberCard() {
     return (
-        <Card className="bg-white rounded-lg shadow-lg relative overflow-hidden group">
+        <Card className="bg-white rounded-lg shadow-lg relative overflow-hidden group max-h-[562px] max-w-[450px]">
             <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[url('/images/teams/card-bg.png')] bg-cover bg-center z-0`}></div>
 
             <img src={`/images/teams/profile.png`} alt={"name"} className='w-full relative h-[80%] object-cover z-1' />

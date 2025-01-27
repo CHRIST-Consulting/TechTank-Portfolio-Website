@@ -44,7 +44,7 @@ const BelowHero = () => {
                 damping: 20,
               }}
             >
-              <h1 className='text-white text-[9.5502645503vw] font-bold tracking-wide leading-none whitespace-nowrap'>
+              <h1 className='text-white text-[8.5502645503vw] font-bold tracking-wide leading-none whitespace-nowrap'>
                 {text}
               </h1>
             </motion.div>

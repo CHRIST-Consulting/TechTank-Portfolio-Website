@@ -3,14 +3,11 @@ import { Navbar } from './components/common/Navbar'
 import { Outlet } from 'react-router-dom';
 import Footer from './components/common/Footer';
 
-export default function ({
-    activeTab,
-    setActiveTab,
-}) {
+export default function () {
 
     return (
         <main className="min-h-screen w-full overflow-x-hidden bg-[#051650]">
-            <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+            <Navbar />
             <div>
                 <Outlet />
             </div>

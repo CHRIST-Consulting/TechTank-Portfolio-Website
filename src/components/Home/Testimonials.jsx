@@ -6,19 +6,19 @@ const testimonials = [
     id: 1,
     author: "Harsh Jangid",
     quote: "Christ Consulting has been a game-changer for our business. Their innovative solutions and expert guidance have helped us achieve milestones we never thought possible!",
-    avatarUrl: "/testemonial.png",
+    avatarUrl: "/images/home/testemonial.png",
   },
   {
     id: 2,
     author: "Harsh Jangid",
     quote: "Christ Consulting has been a game-changer for our business. Their innovative solutions and expert guidance have helped us achieve milestones we never thought possible!",
-    avatarUrl: "/testemonial.png",
+    avatarUrl: "/images/home/testemonial.png",
   },
   {
     id: 3,
     author: "Harsh Jangid",
     quote: "Christ Consulting has been a game-changer for our business. Their innovative solutions and expert guidance have helped us achieve milestones we never thought possible!",
-    avatarUrl: "/testemonial.png",
+    avatarUrl: "/images/home/testemonial.png",
   }
 ]
 

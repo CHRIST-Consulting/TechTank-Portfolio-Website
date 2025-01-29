@@ -1,5 +1,5 @@
+import { teamMembers } from '@/components/Teams/constants'
 import MemberCard from '@/components/Teams/MemberCard'
-import { Card } from '@/components/ui/card'
 import React from 'react'
 
 export default function Teams() {
@@ -31,9 +31,9 @@ export default function Teams() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <MemberCard />
-                    <MemberCard />
-                    <MemberCard />
+                    {teamMembers.map((member, i) => (
+                        <MemberCard key={i} {...member} />
+                    ))}
                 </div>
             </section>
         </main>

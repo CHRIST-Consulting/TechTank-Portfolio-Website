@@ -29,7 +29,7 @@ const BelowHero = () => {
       >
         <div className="flex flex-col gap-2 sm:gap-4">
           {[
-            "Grow Digital",
+            "Grow",
             "Your Business",
             "With",
             "CHRIST Consulting"

@@ -1,37 +1,6 @@
+import { services } from '@/components/Services/data'
 import Service from '@/components/Services/Service'
 import React from 'react'
-
-const services = [
-    {
-        title: "Front End Development",
-        description: "Our mission is to bridge the gap between technology and business success. We believe in creating value by providing transformative solutions that enhance efficiency, scalability, and innovation.",
-        imageUrls: {
-            baseUrl: "/images/services/frontend/",
-            images: [
-                "1.png",
-                "3.png",
-                "2.png",
-                "4.jpg",
-            ]
-        }
-    },
-    {
-        title: "Back End Development",
-        description: "Our mission is to bridge the gap between technology and business success. We believe in creating value by providing transformative solutions that enhance efficiency, scalability, and innovation."
-    },
-    {
-        title: "Full Stack Development",
-        description: "Our mission is to bridge the gap between technology and business success. We believe in creating value by providing transformative solutions that enhance efficiency, scalability, and innovation."
-    },
-    {
-        title: "Chatbots",
-        description: "Our mission is to bridge the gap between technology and business success. We believe in creating value by providing transformative solutions that enhance efficiency, scalability, and innovation."
-    },
-    {
-        title: "Technical Training",
-        description: "Our mission is to bridge the gap between technology and business success. We believe in creating value by providing transformative solutions that enhance efficiency, scalability, and innovation."
-    }
-]
 
 const backgroundColors = [{
     bgColor: "bg-[#D9D9D9]",

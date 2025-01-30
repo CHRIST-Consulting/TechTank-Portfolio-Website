@@ -18,27 +18,23 @@ function App() {
               element={<Home />}
             />
 
-          </Route>
-
-          <Route
-            path="/about"
-            element={<NotFound />}
-          />
-
-          <Route
-            path="/services"
-            element={<Layout />}
-          >
             <Route
-              index
+              path="/team"
+              element={<NotFound />}
+            />
+
+
+            <Route
+              path="/services"
               element={<Services />}
             />
-          </Route>
 
-          <Route
-            path="/contact"
-            element={<NotFound />}
-          />
+            <Route
+              path="/contact"
+              element={<NotFound />}
+            />
+
+          </Route>
 
           <Route
             path="*"

@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import NotFound from './components/not-found';
 import Services from './pages/Services';
 import Layout from './Layout';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
 
             <Route
               path="/contact"
-              element={<NotFound />}
+              element={<Contact />}
             />
 
           </Route>

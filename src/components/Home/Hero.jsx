@@ -23,7 +23,7 @@ export function Hero() {
                 Your Trusted Partner In
               </h2>
               <div>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#B1D8FF] leading-[1.1]">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#95caff] leading-[1.1]">
                   Technological
                 </h1>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1]">
@@ -38,12 +38,14 @@ export function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button
-                className="group bg-white hover:bg-white/90 text-blue-900 rounded-full px-6 py-3 h-auto text-lg transition-all duration-300"
-              >
-                Get Started
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Button>
+              <a href="#about-us">
+                <Button
+                  className="group bg-white hover:bg-white/90 text-blue-900 rounded-full px-6 py-3 h-auto text-lg transition-all duration-300"
+                >
+                  Know About Us
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </a>
             </motion.div>
           </motion.div>
 

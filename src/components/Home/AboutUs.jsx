@@ -7,7 +7,7 @@ export default function AboutUs() {
   };
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white" id="about-us">
       <motion.div
         className="w-full flex items-center justify-center py-16 md:py-24"
         initial="hidden"

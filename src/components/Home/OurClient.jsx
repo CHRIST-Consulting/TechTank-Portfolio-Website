@@ -7,7 +7,7 @@ const OurClient = () => {
   const durations = [25, 25, 25, 25]
 
   useEffect(() => {
-    fetch('/src/lib/clientImages.json')
+    fetch('/client-images/clientImages.json')
       .then(response => response.json())
       .then(data => {
         const images = Object.values(data)

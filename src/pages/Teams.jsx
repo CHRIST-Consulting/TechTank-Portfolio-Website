@@ -5,13 +5,13 @@ import React from 'react'
 export default function Teams() {
     return (
         <main>
-            <section className="bg-gradient-to-b from-[#FFFFFF] via-[#003AFF] via-[59.22%] to-[#051650] to-[78.1%] relative mb-4">
+            <section className="bg-gradient-to-b from-[#FFFFFF] via-[#003AFF] via-[59.22%] to-[#051650] to-[78.1%] relative mb-4 lg:min-h-screen lg:pt-10">
                 <div className="relative container mx-auto px-6 pt-32 pb-20">
                     <div className="max-w-4xl mx-auto text-center">
                         <img src="/images/teams/teams_top.png" alt="Team Illustration" className="w-full max-w-3xl mx-auto" />
-                        <h1 className="flex gap-2 text-4xl font-bold mb-8 justify-center">
+                        <h1 className="flex gap-2 text-4xl lg:text-7xl font-bold mb-8 justify-center">
                             <span className="text-white">MEET</span>
-                            <span className="text-blue-400">OUR</span>
+                            <span className="text-[#AED1FF]">OUR</span>
                             <span className="text-white">TEAM</span>
                         </h1>
                         <p className="md:text-lg text-white/90 max-w-3xl mx-auto leading-relaxed text-left mt-4">
@@ -22,7 +22,7 @@ export default function Teams() {
             </section>
 
             <section className="py-16 container mx-auto px-6 flex flex-col items-center justify-center">
-                <div className="w-full mb-8">
+                <div className="w-full mb-14">
                     <div className="flex gap-2 lg:text-[70px] text-[40px] font-bold justify-center">
                         <h1 className="text-white">Our</h1>
                         <h1 className="text-blue-400">Tech</h1>

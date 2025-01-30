@@ -27,7 +27,7 @@ const BelowHero = () => {
         transition={{ type: "spring", stiffness: 50, damping: 20 }}
         className="w-full pt-8 sm:pt-12 md:pt-16 px-4 sm:px-8"
       >
-        <div className="flex flex-col gap-2 sm:gap-4">
+        <div className="flex flex-col gap-2 sm:gap-4 -mb-16 lg:-mb-8">
           {[
             "Grow",
             "Your Business",
@@ -44,7 +44,7 @@ const BelowHero = () => {
                 damping: 20,
               }}
             >
-              <h1 className='text-white text-[8.5502645503vw] font-bold tracking-wide leading-none whitespace-nowrap'>
+              <h1 className='text-white text-[32px] lg:text-[98px] font-bold tracking-wide leading-none whitespace-nowrap lg:-my-3 -my-1'>
                 {text}
               </h1>
             </motion.div>
@@ -52,7 +52,7 @@ const BelowHero = () => {
         </div>
       </motion.div>
 
-      <motion.div className="w-full mt-auto">
+      <motion.div className="w-full">
         <img
           src="/images/home/hero-bottom.png"
           alt="Hero Background"

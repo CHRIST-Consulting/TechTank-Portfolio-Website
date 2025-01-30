@@ -27,7 +27,7 @@ const TallyIframe = () => {
   }, []);
 
   return (
-    <div className="bg-[#97a7fb] py-4">
+    <div className="bg-white w-full py-4 px-2">
       <iframe
         data-tally-src="https://tally.so/embed/w49xrk?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
         loading="lazy"

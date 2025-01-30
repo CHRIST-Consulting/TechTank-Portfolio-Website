@@ -73,6 +73,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "NeueMontreal", sans-serif;
   margin: 0;

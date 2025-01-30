@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import NotFound from './components/not-found';
 import Services from './pages/Services';
 import Layout from './Layout';
+import Teams from './pages/Teams';
 import Contact from './pages/Contact';
 
 function App() {
@@ -21,9 +22,8 @@ function App() {
 
             <Route
               path="/team"
-              element={<NotFound />}
+              element={<Teams />}
             />
-
 
             <Route
               path="/services"

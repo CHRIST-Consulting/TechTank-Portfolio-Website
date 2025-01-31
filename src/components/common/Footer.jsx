@@ -82,13 +82,13 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col items-start md:items-center gap-4">
-            <a href="/about-us" className="text-[#000033] hover:text-[#0099FF] transition-colors">
+            <a href="/#about-us" className="text-[#000033] hover:text-[#0099FF] transition-colors">
               About Us
             </a>
-            <a href="/our-clients" className="text-[#000033] hover:text-[#0099FF] transition-colors">
+            <a href="/#our-clients" className="text-[#000033] hover:text-[#0099FF] transition-colors">
               Our Clients
             </a>
-            <a href="/testimonials" className="text-[#000033] hover:text-[#0099FF] transition-colors">
+            <a href="/#testimonials" className="text-[#000033] hover:text-[#0099FF] transition-colors">
               Testimonials
             </a>
           </div>

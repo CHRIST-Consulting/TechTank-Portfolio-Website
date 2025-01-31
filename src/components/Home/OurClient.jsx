@@ -49,7 +49,7 @@ const OurClient = () => {
   }
 
   return (
-    <div className=" bg-[#051650] py-20">
+    <div id="our-clients" className=" bg-[#051650] py-20">
       <div className="container mx-auto ">
         <h1 className="text-white text-7xl font-bold mb-10 text-center">
           Our Clients

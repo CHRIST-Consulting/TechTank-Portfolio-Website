@@ -14,13 +14,13 @@ export default function Footer() {
 
           <div className="flex gap-4">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/christ_consulting/"
               className="bg-[#000033] p-2 rounded-full hover:bg-[#0099FF] transition-colors"
             >
               <Instagram className="w-6 h-6 text-white" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/christ-consulting/"
               className="bg-[#000033] p-2 rounded-full hover:bg-[#0099FF] transition-colors"
             >
               <Linkedin className="w-6 h-6 text-white" />
@@ -73,7 +73,7 @@ export default function Footer() {
             <a href="/team" className="text-[#000033] hover:text-[#0099FF] transition-colors">
               Team
             </a>
-            <a href="/service" className="text-[#000033] hover:text-[#0099FF] transition-colors">
+            <a href="/services" className="text-[#000033] hover:text-[#0099FF] transition-colors">
               Service
             </a>
             <a href="/contact" className="text-[#000033] hover:text-[#0099FF] transition-colors">

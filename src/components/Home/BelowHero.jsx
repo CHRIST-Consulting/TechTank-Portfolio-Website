@@ -55,6 +55,7 @@ const BelowHero = () => {
       <motion.div className="w-full">
         <img
           src="/images/home/hero-bottom.png"
+          loading='eager'
           alt="Hero Background"
           className="w-full h-auto object-cover"
         />

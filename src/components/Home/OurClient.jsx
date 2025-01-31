@@ -49,13 +49,13 @@ const OurClient = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#051650] py-20">
-      <div className="container mx-auto px-4">
-        <h1 className="text-white text-7xl font-bold mb-20 text-center">
+    <div className=" bg-[#051650] py-20">
+      <div className="container mx-auto ">
+        <h1 className="text-white text-7xl font-bold mb-10 text-center">
           Our Clients
         </h1>
 
-        <div className="space-y-24">
+        <div className="space-y-5">
           {clientImages.map((rowImages, rowIndex) => (
             <div key={rowIndex} className="relative overflow-hidden">
               <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-[#051650] to-transparent z-10" />
@@ -75,6 +75,7 @@ const OurClient = () => {
                         <div className="w-full h-full flex items-center justify-center">
                           <img
                             src={imagePath || "/placeholder.svg"}
+                            loading="lazy"
                             alt={`Client Logo ${index + 1}`}
                             className="max-w-[80%] max-h-[80%] object-contain"
                           />

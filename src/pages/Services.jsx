@@ -17,7 +17,7 @@ export default function Services() {
         <main>
             <div className="bg-gradient-to-b from-[#FFFFFF] via-[#003AFF] via-[59.22%] to-[#051650] to-[78.1%] relative mb-4">
                 <div className="relative z-10">
-                    <img src="/images/services/hero_image.png" alt="Hero Background" className="absolute inset-0 w-full h-full object-cover object-center opacity-80" />
+                    <img src="/images/services/hero_image.png" loading='eager' alt="Hero Background" className="absolute inset-0 w-full h-full object-cover object-center opacity-80" />
 
                     <div className="relative container mx-auto px-6 flex flex-col items-center justify-end min-h-screen">
                         <h1 className="text-6xl font-bold text-white mb-8 text-center mt-auto">

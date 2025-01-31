@@ -8,7 +8,7 @@ export default function Teams() {
             <section className="bg-gradient-to-b from-[#FFFFFF] via-[#003AFF] via-[59.22%] to-[#051650] to-[78.1%] relative mb-4 lg:min-h-screen lg:pt-10">
                 <div className="relative container mx-auto px-6 pt-32 pb-20">
                     <div className="max-w-4xl mx-auto text-center">
-                        <img src="/images/teams/teams_top.png" alt="Team Illustration" className="w-full max-w-3xl mx-auto" />
+                        <img src="/images/teams/teams_top.png" loading='eager' alt="Team Illustration" className="w-full max-w-3xl mx-auto" />
                         <h1 className="flex gap-2 text-4xl lg:text-7xl font-bold mb-8 justify-center">
                             <span className="text-white">MEET</span>
                             <span className="text-[#AED1FF]">OUR</span>

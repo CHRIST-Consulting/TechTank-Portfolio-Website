@@ -61,6 +61,7 @@ export function Navbar() {
               >
                 <img
                   src="/images/logo.png"
+                  loading='eager'
                   alt="logo"
                   className="w-full h-full object-contain"
                 />

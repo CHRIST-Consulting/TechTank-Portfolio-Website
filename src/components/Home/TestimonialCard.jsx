@@ -26,7 +26,7 @@ export default function TestimonialCard({ quote, author, avatarUrl }) {
 
           <div className="relative z-10 flex flex-col items-center">
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-4 border-white overflow-hidden bg-white">
-              <img src={avatarUrl || "/placeholder.svg"} alt="" className="w-full h-full object-cover" />
+              <img src={avatarUrl || "/placeholder.svg"} loading="lazy" alt="" className="w-full h-full object-cover" />
             </div>
             <h3 className="text-white text-lg sm:text-xl font-semibold mt-4 mb-6">{author}</h3>
           </div>

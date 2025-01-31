@@ -63,6 +63,7 @@ export function Hero() {
               >
                 <img
                   src="/images/home/hero.png"
+                  loading="eager"
                   alt="Technology Infrastructure"
                   className="w-full h-full object-contain"
                 />

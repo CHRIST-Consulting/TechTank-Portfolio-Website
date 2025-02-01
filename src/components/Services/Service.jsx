@@ -26,7 +26,7 @@ export default function Service({ bgColor, textColor, title, description, imageU
                 {
                     imageUrls && displayImages.map((image, index) => (
                         <div key={index} className="bg-white/10 p-2 mx-2 rounded-lg shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-                            <img src={imageUrls.baseUrl + image} loading='lazy' alt="Service" className="rounded-lg object-cover shadow-md max-w-[240px] max-h-[200px] min-w-[240px] min-h-[200px]" />
+                            <img src={imageUrls.baseUrl + image} loading='lazy' alt={title + " service " + index} className="rounded-lg object-cover shadow-md max-w-[240px] max-h-[200px] min-w-[240px] min-h-[200px]" />
                         </div>
                     ))
                 }

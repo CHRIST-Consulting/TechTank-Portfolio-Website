@@ -8,7 +8,7 @@ function MemberCard({ imageUrl, name, role, skills }) {
                 <img src={`/images/teams/backdrops/${imageUrl}`} loading='lazy' alt="" />
             </div>
 
-            <img src={`/images/teams/profiles/${imageUrl}`} loading='lazy' alt={"name"} className='w-full relative h-[80%] object-cover z-1' />
+            <img src={`/images/teams/profiles/${imageUrl}`} loading='lazy' alt={name} className='w-full relative h-[80%] object-cover z-1' />
 
             <div className='absolute text-[#001F54] font-medium text-sm bottom-[20%] left-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-start p-2 px-4 gap-2 bg-[#002B59B2] z-2'>
                 {

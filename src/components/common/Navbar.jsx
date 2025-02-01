@@ -62,7 +62,7 @@ export function Navbar() {
                 <img
                   src="/images/logo.png"
                   loading='eager'
-                  alt="logo"
+                  alt="CHRIST Consulting Logo"
                   className="w-full h-full object-contain"
                 />
               </motion.div>

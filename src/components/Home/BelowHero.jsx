@@ -56,7 +56,7 @@ const BelowHero = () => {
         <img
           src="/images/home/hero-bottom.png"
           loading='eager'
-          alt="Hero Background"
+          alt="CHRIST University Campus"
           className="w-full h-auto object-cover"
         />
       </motion.div>

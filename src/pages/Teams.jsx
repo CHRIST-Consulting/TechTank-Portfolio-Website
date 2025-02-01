@@ -1,10 +1,28 @@
 import { teamMembers } from '@/components/Teams/constants'
 import MemberCard from '@/components/Teams/MemberCard'
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 export default function Teams() {
     return (
         <main>
+            <Helmet>
+                <title>Meet Our Team | TechTank | CHRIST Consulting</title>
+                <meta name="title" content="Meet Our Team | TechTank | CHRIST Consulting" />
+                <meta name="description" content="Discover the experts behind TechTank at CHRIST Consulting. Our team specializes in technology consulting, AI solutions, web development, and student mentorship. Learn more about our dedicated professionals." />
+                <meta name="keywords" content="TechTank team, CHRIST Consulting team, technology consultants, AI experts, web development team, student mentorship, tech professionals, innovation leaders" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://techtank-cc.vercel.app/team" />
+                <meta property="og:title" content="Meet Our Team | TechTank | CHRIST Consulting" />
+                <meta property="og:description" content="Get to know the professionals driving innovation at TechTank. Our team at CHRIST Consulting excels in technology consulting, AI, web development, and mentoring future tech leaders." />
+                <meta property="og:url" content="https://techtank-cc.vercel.app/team" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://techtank-cc.vercel.app/images/logo.png" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Meet Our Team | TechTank | CHRIST Consulting" />
+                <meta name="twitter:description" content="Introducing the experts at TechTank. Our CHRIST Consulting team specializes in technology solutions, AI, web development, and student mentorship." />
+                <meta name="twitter:image" content="https://techtank-cc.vercel.app/images/logo.png" />
+            </Helmet>
             <section className="bg-gradient-to-b from-[#FFFFFF] via-[#003AFF] via-[59.22%] to-[#051650] to-[78.1%] relative mb-4 lg:min-h-screen lg:pt-10">
                 <div className="relative container mx-auto px-6 pt-32 pb-20">
                     <div className="max-w-4xl mx-auto text-center">

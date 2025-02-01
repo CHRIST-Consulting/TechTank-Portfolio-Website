@@ -61,10 +61,10 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <Globe className="w-6 h-6 text-[#000033]" />
               <a
-                href="https://christuniversity.in/center/C/CONSULTING/"
+                href="https://christuniversity.in/center/O/CONSULTING/"
                 className="text-sm text-gray-600 hover:text-[#0099FF]"
               >
-                Web: https://christuniversity.in/center/C/CONSULTING/
+                Web: https://christuniversity.in/center/O/CONSULTING/
               </a>
             </div>
           </div>

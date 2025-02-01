@@ -1,0 +1,24 @@
+# Robots.txt for TechTank | CHRIST Consulting
+# This file provides crawling instructions to search engines
+
+User-agent: *  # Applies to all web crawlers
+
+# Disallow crawling of sensitive directories
+Disallow: /admin/           # Admin pages
+Disallow: /login/           # Login pages
+Disallow: /register/        # Registration pages
+Disallow: /dashboard/       # User dashboard pages
+Disallow: /api/             # API endpoints
+Disallow: /private/         # Private or non-public pages
+
+# Allow crawling of important public pages
+Allow: /services/           # Services page
+Allow: /team/               # Team page
+Allow: /contact/            # Contact page
+Allow: /                    # Homepage
+
+# Sitemap URL to help crawlers discover all pages
+Sitemap: https://techtank-cc.vercel.app/sitemap.xml
+
+# Crawl delay to prevent server overload (adjust if necessary)
+Crawl-delay: 5

@@ -29,7 +29,7 @@ export default function Teams() {
                         <img src="/images/teams/teams_top.png" loading='eager' alt="Team Illustration" className="w-full max-w-3xl mx-auto" />
                         <h1 className="flex gap-2 text-4xl lg:text-7xl font-bold mb-8 justify-center">
                             <span className="text-white">MEET</span>
-                            <span className="text-[#AED1FF]">OUR</span>
+                            <span className="text-[#4cb4ff]">OUR</span>
                             <span className="text-white">TEAM</span>
                         </h1>
                         <p className="md:text-lg text-white/90 max-w-3xl mx-auto leading-relaxed text-left mt-4">

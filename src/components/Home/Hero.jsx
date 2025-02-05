@@ -23,7 +23,7 @@ export function Hero() {
                 Your Trusted Partner In
               </h2>
               <div>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#95caff] leading-[1.1]">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#102c94] leading-[1.1]">
                   Technological
                 </h1>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1]">

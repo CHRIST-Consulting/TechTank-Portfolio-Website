@@ -1,7 +1,8 @@
 import { services } from '@/components/Services/data'
 import Service from '@/components/Services/Service'
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
+import { servicesSchema, breadcrumbSchema } from '@/lib/structuredData'
 
 const backgroundColors = [{
     bgColor: "bg-[#D9D9D9]",
@@ -13,6 +14,11 @@ const backgroundColors = [{
 
 export default function Services() {
     let count = 0
+
+    const servicesBreadcrumb = breadcrumbSchema([
+        { name: 'Home', url: 'https://techtank-cc.vercel.app/' },
+        { name: 'Services', url: 'https://techtank-cc.vercel.app/services' }
+    ]);
 
     return (
         <main>
@@ -28,6 +34,12 @@ export default function Services() {
                 <meta property="og:url" content="https://techtank-cc.vercel.app/services" />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="https://techtank-cc.vercel.app/images/logo.png" />
+                <script type="application/ld+json">
+                    {JSON.stringify(servicesSchema)}
+                </script>
+                <script type="application/ld+json">
+                    {JSON.stringify(servicesBreadcrumb)}
+                </script>
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Our Services | TechTank | CHRIST Consulting" />
                 <meta name="twitter:description" content="We offer top-tier Frontend & Backend Development, Full Stack Solutions, Chatbot Development, and Technical Training at TechTank | CHRIST Consulting." />

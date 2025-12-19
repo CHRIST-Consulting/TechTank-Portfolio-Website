@@ -1,9 +1,15 @@
 import { teamMembers } from '@/components/Teams/constants'
 import MemberCard from '@/components/Teams/MemberCard'
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
+import { breadcrumbSchema } from '@/lib/structuredData'
 
 export default function Teams() {
+    const teamBreadcrumb = breadcrumbSchema([
+        { name: 'Home', url: 'https://techtank-cc.vercel.app/' },
+        { name: 'Team', url: 'https://techtank-cc.vercel.app/team' }
+    ]);
+
     return (
         <main>
             <Helmet>
@@ -22,6 +28,9 @@ export default function Teams() {
                 <meta name="twitter:title" content="Meet Our Team | TechTank | CHRIST Consulting" />
                 <meta name="twitter:description" content="Introducing the experts at TechTank. Our CHRIST Consulting team specializes in technology solutions, AI, web development, and student mentorship." />
                 <meta name="twitter:image" content="https://techtank-cc.vercel.app/images/logo.png" />
+                <script type="application/ld+json">
+                    {JSON.stringify(teamBreadcrumb)}
+                </script>
             </Helmet>
             <section className="bg-gradient-to-b from-[#FFFFFF] via-[#003AFF] via-[59.22%] to-[#051650] to-[78.1%] relative mb-4 lg:min-h-screen lg:pt-10">
                 <div className="relative container mx-auto px-6 pt-32 pb-20">

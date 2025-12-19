@@ -1,8 +1,14 @@
 import TallyIframe from '@/components/Contact/TallyIframe'
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
+import { breadcrumbSchema, organizationSchema } from '@/lib/structuredData'
 
 export default function Contact() {
+    const contactBreadcrumb = breadcrumbSchema([
+        { name: 'Home', url: 'https://techtank-cc.vercel.app/' },
+        { name: 'Contact', url: 'https://techtank-cc.vercel.app/contact' }
+    ]);
+
     return (
         <main>
             <Helmet>
@@ -21,6 +27,12 @@ export default function Contact() {
                 <meta name="twitter:title" content="Contact Us | TechTank | CHRIST Consulting" />
                 <meta name="twitter:description" content="Connect with TechTank at CHRIST Consulting for inquiries about our technology solutions and educational programs." />
                 <meta name="twitter:image" content="https://techtank-cc.vercel.app/images/logo.png" />
+                <script type="application/ld+json">
+                    {JSON.stringify(contactBreadcrumb)}
+                </script>
+                <script type="application/ld+json">
+                    {JSON.stringify(organizationSchema)}
+                </script>
 
             </Helmet>
             <div className="bg-gradient-to-b from-white via-[#003AFF] via-[35.22%] to-[#0a2d9e] to-[78.1%]">
